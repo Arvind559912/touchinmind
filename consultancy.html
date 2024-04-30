@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4Y9CMK1SD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H4Y9CMK1SD');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Consultancy</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&family=Nunito:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+
+
+    <style>
+        .services-detail>div {
+            display: none;
+        }
+        
+        .services-detail>div:target {
+            display: block;
+        }
+    </style>
+
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+            padding-top: 20px;
+        }
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav .logo:hover {
+            background-color: white;
+        }
+        
+        .topnav .icon {
+            display: none;
+        }
+        
+        .topnav .contact-btn {
+            float: right;
+            margin-right: 80px;
+            background-color: tomato;
+            border-radius: 30px;
+        }
+        
+        .topnav .contact-btn:hover {
+            background-color: aqua;
+            color: rgb(0, 0, 0);
+        }
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+            font-size: 17px;
+            border: none;
+            outline: none;
+            color: black;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        
+        .dropdown-content {
+            display: none;
+            padding-left: 20px;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .topnav a:hover,
+        .dropdown:hover .dropbtn {
+            color: tomato;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        @media screen and (max-width: 860px) {
+            .topnav a:not(:first-child),
+            .dropdown .dropbtn {
+                display: none;
+            }
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+            .topnav .contact-btn {
+                background: none;
+            }
+            .topnav .contact-btn:hover {
+                background-color: white;
+            }
+        }
+        
+        @media screen and (max-width: 860px) {
+            .topnav.responsive {
+                position: relative;
+            }
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .topnav.responsive .dropdown {
+                float: none;
+            }
+            .topnav.responsive .dropdown-content {
+                position: relative;
+            }
+            .topnav.responsive .dropdown .dropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+    <style>
+        .touch1 {
+            width: 98%;
+            height: 1000px;
+            background-image: linear-gradient(rgba(0, 26, 255, 0.349), rgba(42, 255, 244, 0.37)), url("assets/images/12.avif");
+            background-size: cover;
+            background-position: left;
+            background-attachment: fixed;
+            padding: 3% 3% 3%;
+        }
+        
+        .touch2 {
+            width: 100%;
+            height: 95%;
+            /*    border: 3px solid white; */
+        }
+        
+        .touch2 ul {
+            width: 100%;
+            margin-top: 50px;
+        }
+        
+        .touch2 li {
+            width: 23%;
+            height: 150px;
+            background-color: rgba(104, 104, 75, 0.295);
+            list-style-type: none;
+            float: left;
+            margin-left: 1%;
+            margin-top: 3%;
+            color: white;
+            text-align: center;
+            padding-top: 20px;
+            padding-right: 10px;
+        }
+        
+        .touch2 li i {
+            font-size: 40px;
+            color: white;
+        }
+        
+        .touch2 li p {
+            font-size: 18px;
+            color: white;
+        }
+        
+        .touch2 li span {
+            color: black;
+        }
+        
+        .touch2 li:hover {
+            background: -webkit-linear-gradient(left, rgba(216, 59, 255, 0.795), rgba(128, 255, 202, 0.788));
+        }
+        
+        .touch2 li:hover span {
+            color: white;
+        }
+        
+        .touch2 li:hover p {
+            color: black;
+        }
+        
+        .touch2 li a {
+            text-decoration: none;
+        }
+        
+        @media (max-width: 1000px) {
+            .touch2 li {
+                width: 30%;
+                margin-left: 3%;
+            }
+            .touch1 {
+                height: 1300px;
+            }
+            .touch2 {
+                height: 98%;
+            }
+            .touch2 ul {
+                margin-top: 100px;
+            }
+            .our-services h3 {
+                margin-top: -50px;
+            }
+        }
+        
+        @media (max-width: 800px) {
+            .touch2 li {
+                width: 45%;
+                margin-left: 3%;
+            }
+            .touch1 {
+                height: 1300px;
+            }
+            .touch2 {
+                height: 98%;
+            }
+            .touch2 ul {
+                margin-top: 100px;
+            }
+            .our-services h3 {
+                margin-top: -50px;
+            }
+        }
+        
+        @media (max-width: 500px) {
+            .touch2 li {
+                width: 75%;
+                margin-left: 10%;
+            }
+            .touch2 textarea {
+                width: 60%;
+            }
+            .touch1 {
+                height: 2500px;
+            }
+            .touch2 {
+                height: 95%;
+            }
+        }
+    </style>
+    <style>
+        @media screen and (max-width: 750px) {
+            .li1 {
+                width: 44%;
+                text-align: center;
+            }
+            .footer1 .footer1-top .social {
+                padding-left: 20%;
+            }
+        }
+    </style>
+    <style>
+        .number {
+            margin-top: -100px;
+            width: 100%;
+            height: 100px;
+            padding: 3% 3% 3%;
+        }
+        
+        .mail {
+            width: 95%;
+            height: 90%;
+        }
+        
+        .mail p {
+            color: white;
+            margin-left: 40px;
+        }
+        
+        .mail ul {
+            width: 100%;
+        }
+        
+        .mail li {
+            width: 45%;
+            list-style-type: none;
+            float: left;
+            margin-left: 4%;
+            margin-top: 3%;
+            color: black;
+        }
+        
+        .mail li i {
+            font-size: 20px;
+            color: tomato;
+            margin-right: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            .mail li {
+                width: 90%;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .mail li {
+                width: 80%;
+            }
+            .mail textarea {
+                width: 60%;
+            }
+        }
+    </style>
+    <style>
+        .services-detail .market-consult {
+            padding-top: 100px;
+        }
+        
+        .market-consult h2 {
+            text-align: center;
+        }
+        
+        .market-consult ul {
+            margin-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html"> <img src="assets/images/colored-logo8.PNG" style="width: 100px;height: 60px;float: inline-start;margin-left: 40px;margin-top: -20px;" alt=""></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="index.html#services" class="active">Services</a>
+            <a href="index.html#about">About Us</a>
+            <a href="index.html#portfolio">Portfolio</a>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown 
+          <i class="fa fa-caret-down"></i>
+        </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <a href="index.html#about">About</a>
+            <a href="#contact" class="contact-btn">Contact Us</a>
+            <a href="javascript:void(0);" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <!--   <div class="logo">
+            <img src="assets/images/colored-logo8.PNG" alt="">
+        </div>
+        <div class="head-menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <p class="active"> Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#services">
+                        <p>Services</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio">
+                        <p>Portfolio</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <p>About us</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p> Videos</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#partner">
+                        <p>Our Partner</p>
+                    </a>
+                </li>
+                <li class="menu-btn">
+                    <a href="#contact">
+                        <p> Contact us Now</p>
+                    </a>
+                </li>
+            </ul>
+        </div>-->
+    </div>
+
+
+
+
+
+    <div id="services">
+        <div class="our-services">
+            <h3>Consulting Services</h3>
+
+            <div class="touch1">
+                <div class="touch2">
+                    <ul>
+                        <a href="#market-consult">
+                            <li>
+                                <i class="bi bi-aspect-ratio"></i>
+                                <p>Marketing <span> Consulting </span></p>
+                            </li>
+                        </a>
+                        <a href="#market-consult">
+                            <li>
+                                <i class="bi bi-stack"></i>
+                                <p><span>Financial </span> Consulting</p>
+                            </li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="webdevelopment.html" class="our-service-hide">
+                            <li>
+                                <i class="bi bi-windows"></i>
+                                <p> Social Media<span> Consulting</span></p>
+                            </li>
+                        </a>
+                        <a href="appdevelop.html" class="our-service-hide">
+                            <li>
+                                <i class="bi bi-skype"></i>
+                                <p><span> Career Coaching </span>& Consulting</p>
+                            </li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="cloudcomputing.html">
+                            <li>
+                                <i class="bi bi-cloud-lightning"></i>
+                                <p><span> Management </span>Consulting</p>
+                            </li>
+                        </a>
+                        <a href="seo.html">
+                            <li>
+                                <i class="bi bi-gem"></i>
+                                <p>Software & <span> IT Consulting</span></p>
+                            </li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#" class="our-service-hide">
+                            <li>
+                                <i class="bi bi-display"></i>
+                                <p><span>Human Resources (HR) </span> Consulting</p>
+                            </li>
+                        </a>
+                        <a href="#" class="our-service-hide">
+                            <li>
+                                <i class="bi bi-windows"></i>
+                                <p>UX / UI <span> Consulting</span></p>
+                            </li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <i class="bi bi-stack-overflow"></i>
+                                <p><span> Sales </span>Consulting</p>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li>
+                                <i class="bi bi-graph-up-arrow"></i>
+                                <p><span> Compliance </span> Consulting</p>
+                            </li>
+                        </a>
+                    </ul>
+                    <ul>
+                        <a href="#">
+                            <li>
+
+                                <i class="bi bi-speedometer"></i>
+                                <p> Innovation <span> Consulting</span></p>
+
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li>
+
+                                <i class="bi bi-spotify"></i>
+                                <p>Risk and <span> Compliance</span> Consultant</p>
+
+                            </li>
+                        </a>
+                    </ul>
+
+                </div>
+            </div>
+
+
+
+            <div class="services-btn">
+                <a href="#">
+                    <p class="services-btn1">See More</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-detail" id="services">
+        <div class="market-consult" id="market-consult">
+            <h2>Marketing <span> Consultant</span></h2>
+            <ul>
+                <li>Dominating the technology:
+                    <p>The key to provide a professional marketing consultation relies in the ability to analyze and dig into to platforms such as <span> Google Ads,</span> <b> Facebook Advertising,</b> <span> Social media </span>and <b> SEO tools.</b>.
+                        The digital marketing consultant is required to be able to audit and set <b> optimization </b>for either planned or running campaigns on each platform. In recent years, the tech abilities expanded to include marketing automation
+                        <b>  clouds, AI, CRMs and CMS.</b>
+                    </p>
+                    <ul>
+                        <h4>We offer These types of Consulting</h4>
+                        <li> Online marketing</li>
+                        <li>Social media marketing</li>
+                        <li>Nonprofit marketing</li>
+                        <li>Copywriting</li>
+                        <li> Print or TV advertising</li>
+                        <li>Public relations</li>
+                        <li> Direct response marketing</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+        <div class="market-consult" id="software-consult">
+            <h2>Software & IT <span> Consultant</span></h2>
+            <ul>
+                <li>Dominating the technology:
+                    <p>The key to provide a professional marketing consultation relies in the ability to analyze and dig into to platforms such as <span> Google Ads,</span> <b> Facebook Advertising,</b> <span> Social media </span>and <b> SEO tools.</b>.
+                        The digital marketing consultant is required to be able to audit and set <b> optimization </b>for either planned or running campaigns on each platform. In recent years, the tech abilities expanded to include marketing automation
+                        <b>  clouds, AI, CRMs and CMS.</b>
+                    </p>
+                    <ul>
+                        <h4>We offer These types of Consulting</h4>
+                        <li>To give end-to-end support in building software.</li>
+                        <li>To analyze the reliability of the software in the present and future situations.</li>
+                        <li> Identifying and gathering business requirements</li>
+                        <li>Offering software solutions to clients</li>
+                        <li> Recommending software developments and implementations</li>
+                        <li> Developing required system changes</li>
+                        <li> Coordinating workflow processes</li>
+                        <li>Public relations</li>
+                        <li> Solving technical quality issues</li>
+                        <li> Monitoring technical design processes</li>
+                        <li> Collaborating with software professionals to create software solutions</li>
+                        <li> Documenting business requirements</li>
+                        <li> Testing solutions to make sure they meet customer requirements</li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+
+    <div class="class1" id="contact" style="width: 100%;">
+        <div class="class2">
+            <h3>Contact Us</h3>
+            <p>Fill in the data below</p>
+            <ul>
+                <li><input type="text" placeholder="Enter Your Name"></li>
+                <li><input type="text" placeholder="Enter Your Mail Id"></li>
+            </ul>
+            <ul>
+                <li><input type="text" placeholder="Enter Mobile Number"></li>
+                <li><input type="text" placeholder="Enter Country"></li>
+            </ul>
+            <ul>
+                <li> <select class="form-select mt-3" required>
+                    <option selected disabled value="">Industry Type</option>
+                    <option value="jweb">IT Industry</option>
+                    <option value="sweb">Transport Industry</option>
+                    <option value="pmanager">Telecommunication Industry</option>
+                     <option value="pmanager">Construction Industry</option>
+                      <option value="pmanager">Pharmaceutical Industry</option> 
+                      <option value="pmanager">Education Industry</option> 
+                      <option value="pmanager"> Aerospace Industry</option> 
+                      <option value="pmanager">Agriculture Industry</option>
+                       <option value="pmanager">Food Industry</option>
+                       <option value="pmanager">Hospitatlity Industry</option>
+                       <option value="pmanager">News Media Industry</option>
+                       <option value="pmanager">Manufacturing Industry</option>
+                       <option value="pmanager">Electronic Industry</option>
+                   </select></li>
+                <li> <select class="form-select mt-3" required>
+                    <option selected disabled value="">Choose Services</option>
+                    <option value="jweb">SEO</option>
+                    <option value="sweb">Web Application</option>
+                    <option value="pmanager">Android Application</option>
+                    <option value="pmanager">Consultancy</option>
+                     <option value="pmanager">Cloud Computing</option>
+                     <option value="pmanager">Desktop Application</option>
+                     <option value="pmanager">UI/UX Design</option>
+                     <option value="pmanager">DevOps</option>
+                     <option value="pmanager">Integration Services</option>
+                     <option value="pmanager">Server Support</option>
+                     <option value="pmanager">Manuaal & Automation Testing</option>
+                     
+                   </select></li>
+            </ul>
+            <ul>
+                <li> <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="How can we help you " required></textarea></li>
+                <li> <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label">I confirm that all data are correct</label>
+                    <div class="form-button">
+                        <button id="submit" type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="location" id="location">
+
+        <div class="location-left">
+            <img src="assets/images/contact-left-dec.png" alt="">
+        </div>
+
+        <div class="location-mid">
+            <p class="location-heading">Feel free <span> Connected</span> <b> With Us</b>
+            </p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458600.6378600212!2d79.16577883794014!3d26.104875987823487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399d7edf1179b633%3A0xb8b56ef0da1fbdb4!2sJalaun%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1634735298046!5m2!1sen!2sin"
+                width="150%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="location-right">
+            <img src="assets/images/contact-dec.png" alt="">
+        </div>
+    </div>
+
+    <div class="number">
+        <div class="mail">
+            <ul>
+                <li><i class="bi bi-telephone-outbound"></i> 9098260397</li>
+                <li><i class="bi bi-envelope"></i> touchinmind@protonmail.com</li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer1">
+        <div class="footer1-top">
+            <ul class="ul1 ul2">
+                <li class="li1 li2">
+                    <div class="logo"> <img src="assets/images/colored-logo8.PNG" style="width: 150px;" alt=""></div>
+                    <p class="footer1-mail">touchinmind@protonmail.com</p>
+                    <div class="social">
+                        <p class="facebook"><img src="assets/images/face2.png" alt=""></p>
+                        <p class="twitter"><img src="assets/images/twitter.png" alt=""></p>
+                        <p class="insta"><img src="assets/images/insta.jpg" alt=""></p>
+                        <p class="google"><img src="assets/images/google2.png" alt=""></p>
+                    </div>
+                </li>
+                <li class="li1 li2">
+                    <p class="footer1-heading">Services</p>
+                    <p>SEO Development</p>
+                    <p>Business Growth</p>
+                    <p>Social Media Management</p>
+                    <p>Website Optimization</p>
+                    <p>Web Hosting</p>
+                </li>
+                <li class="li1 li2">
+                    <p class="footer1-heading">Community</p>
+                    <p>Digital Marketing</p>
+                    <p>Business Ideas</p>
+                    <p>Website Checkup</p>
+                    <p>Page Speed Test</p>
+                    <p>SEO Development</p>
+                </li>
+
+                <li class="li1 li2">
+                    <p class="footer1-heading">Subscribe Newsletters</p>
+                    <p>Get our latest news and ideas</p>
+                    <p> to your inbox</p>
+
+                    <p><input type="text" placeholder="Your Email"><img src="assets/images/send-mail.png" style="height: 30px;width: 20px;margin-left: -45px;" alt=""></p>
+                </li>
+            </ul>
+        </div>
+        <div class="footer1-bottom">
+            <p class="horizon"></p>
+            <p>Copyright © 2021 TouchinMind.com, Ltd. All Rights Reserved. </p>
+            <p>Founder & Designed by <span style="font-size: 16px;"> Arvind Kumar</span></p>
+            <p>Distributed by <span> TouchinMind</span></p>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

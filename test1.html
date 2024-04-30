@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .touch1 {
+        width: 100%;
+        height: 600px;
+        background-image: linear-gradient(rgba(0, 26, 255, 0.349), rgba(42, 255, 244, 0.37)), url("assets/images/12.avif");
+        background-size: cover;
+        background-position: left;
+        background-attachment: fixed;
+        padding: 3% 3% 3%;
+    }
+    
+    .touch2 {
+        width: 95%;
+        height: 95%;
+        border: 3px solid white;
+    }
+    
+    .touch2 p {
+        color: white;
+        margin-left: 40px;
+    }
+    
+    .touch2 ul {
+        width: 100%;
+    }
+    
+    .touch2 li {
+        width: 30%;
+        height: 200px;
+        background-color: rgba(104, 104, 75, 0.295);
+        list-style-type: none;
+        float: left;
+        margin-left: 1%;
+        margin-top: 3%;
+        color: white;
+    }
+    
+    @media (max-width: 800px) {
+        .touch2 li {
+            width: 45%;
+        }
+        .touch1 {
+            height: 600px;
+        }
+        .touch2 {
+            height: 98%;
+            overflow-x: scroll;
+        }
+    }
+    
+    @media (max-width: 500px) {
+        .touch2 li {
+            width: 75%;
+        }
+        .touch2 textarea {
+            width: 60%;
+        }
+        .touch1 {
+            height: 900px;
+        }
+        .touch2 {
+            height: 98%;
+            overflow-x: scroll;
+        }
+    }
+</style>
+
+<body>
+    <div class="touch1">
+        <div class="touch2">
+            <ul>
+                <li><i class="bi bi-telephone-outbound"></i> 9098260397</li>
+                <li><i class="bi bi-envelope"></i> touchinmind@protonmail.com</li>
+            </ul>
+            <ul>
+                <li><i class="bi bi-telephone-outbound"></i> 9098260397</li>
+                <li><i class="bi bi-envelope"></i> touchinmind@protonmail.com</li>
+            </ul>
+            <ul>
+                <li><i class="bi bi-telephone-outbound"></i> 9098260397</li>
+                <li><i class="bi bi-envelope"></i> touchinmind@protonmail.com</li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4Y9CMK1SD"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H4Y9CMK1SD');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Touchinmind</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@800&family=Nunito:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+
+
+
+
+    <style>
+        .topnav {
+            overflow: hidden;
+            background-color: white;
+            padding-top: 20px;
+        }
+        
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        
+        .topnav .logo:hover {
+            background-color: white;
+        }
+        
+        .topnav .icon {
+            display: none;
+        }
+        
+        .topnav .contact-btn {
+            float: right;
+            margin-right: 80px;
+            background-color: tomato;
+            border-radius: 30px;
+        }
+        
+        .topnav .contact-btn:hover {
+            background-color: aqua;
+            color: tomato;
+        }
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        
+        .dropdown .dropbtn {
+            font-size: 17px;
+            border: none;
+            outline: none;
+            color: black;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        
+        .dropdown-content {
+            display: none;
+            padding-left: 20px;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        
+        .topnav a:hover,
+        .dropdown:hover .dropbtn {
+            color: tomato;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        @media screen and (max-width: 860px) {
+            .topnav a:not(:first-child),
+            .dropdown .dropbtn {
+                display: none;
+            }
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+            .topnav .contact-btn {
+                background: none;
+            }
+            .topnav .contact-btn:hover {
+                background-color: white;
+            }
+        }
+        
+        @media screen and (max-width: 860px) {
+            .topnav.responsive {
+                position: relative;
+            }
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .topnav.responsive .dropdown {
+                float: none;
+            }
+            .topnav.responsive .dropdown-content {
+                position: relative;
+            }
+            .topnav.responsive .dropdown .dropbtn {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="header">
+        <div class="topnav" id="myTopnav">
+            <img src="assets/images/colored-logo8.PNG" style="width: 100px;height: 60px;float: inline-start;margin-left: 40px;margin-top: -20px;" alt="">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#services" class="active">Services</a>
+            <a href="#about">About Us</a>
+            <a href="#portfolio">Portfolio</a>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown 
+          <i class="fa fa-caret-down"></i>
+        </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <a href="#about">About</a>
+            <a href="#contact" class="contact-btn">Contact Us</a>
+            <a href="javascript:void(0);" style="font-size:18px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <!--   <div class="logo">
+            <img src="assets/images/colored-logo8.PNG" alt="">
+        </div>
+        <div class="head-menu">
+            <ul>
+                <li>
+                    <a href="#">
+                        <p class="active"> Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#services">
+                        <p>Services</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio">
+                        <p>Portfolio</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <p>About us</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p> Videos</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#partner">
+                        <p>Our Partner</p>
+                    </a>
+                </li>
+                <li class="menu-btn">
+                    <a href="#contact">
+                        <p> Contact us Now</p>
+                    </a>
+                </li>
+            </ul>
+        </div>-->
+    </div>
+
+
+    <div class="banner">
+        <div class="banner-mid">
+            <div class="container">
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                 
+
+                    <!-- Wrapper for slides -->
+
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <h4>Welcome to Touchinmind</h4>
+                            <p class="heading">Build <span> your Website </span><br>the Best <b> in SEO?</b></p>
+                            <p>This is the professional looking HTML Bootstrap 5 website Template </p>
+                            <p> brought to you by Touchinmind Website</p>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <p class="item-btn">Our Services</p>
+                                    </a>
+                                </li>
+                                <li class="call">
+                                    <a href="#">
+                                        <p class="item-call"><i class="bi bi-telephone-outbound"></i></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="item-number">9098260397</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <h4>ONLINE MARKETING2</h4>
+                            <p class="heading">Get <span> Best Ideas</span><br>for <b>Your Website?</b> </p>
+                            <p>This is the professional looking HTML Bootstrap 5 website Template </p>
+                            <p> brought to you by Touchinmind Website</p>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <p class="item-btn">Our Services</p>
+                                    </a>
+                                </li>
+                                <li class="call">
+                                    <a href="#">
+                                        <p class="item-call"><i class="bi bi-telephone-outbound"></i></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="item-number">9098260397</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <h4>Welcome to Touchinmind 3</h4>
+                            <p class="heading">Build <span> your Website </span><br>the Best <b> in SEO?</b></p>
+                            <p>This is the professional looking HTML Bootstrap 5 website Template </p>
+                            <p> brought to you by Touchinmind Website</p>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <p class="item-btn">Our Services</p>
+                                    </a>
+                                </li>
+                                <li class="call">
+                                    <a href="#">
+                                        <p class="item-call"><i class="bi bi-telephone-outbound"></i></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <p class="item-number">9098260397</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls 
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>-->
+                </div>
+            </div>
+
+
+        </div>
+        <!--    <div class="banner-right">
+            <img src="assets/images/banner-right-image.png" alt="">
+        </div>-->
+    </div>
+
+
+
+    <div id="services">
+        <div class="our-services">
+            <h3>Our Services</h3>
+            <div class='center'>
+                <ul class="container float">
+                    <a href="consultancy.html">
+                        <li class="item-box float-item">
+                            <i class="bi bi-aspect-ratio"></i>
+                            <p>Consul<span>tancy</span></p>
+                        </li>
+                    </a>
+                    <a href="database.html">
+                        <li class="item-box float-item">
+                            <i class="bi bi-stack"></i>
+                            <p>Database <span> Management</span></p>
+                        </li>
+                    </a>
+                    <a href="webdevelopment.html">
+                        <li class="item-box float-item">
+                            <i class="bi bi-windows"></i>
+                            <p><span> Web</span> Development</p>
+                        </li>
+                    </a>
+                    <a href="appdevelop.html">
+                        <li class="item-box float-item">
+                            <i class="bi bi-skype"></i>
+                            <p>App <span> Development</span></p>
+                        </li>
+                    </a>
+                    <a href="cloudcomputing.html">
+                        <li class="item-box float-item">
+                            <i class="bi bi-cloud-lightning"></i>
+                            <p><span> Cloud </span>Computing</p>
+                        </li>
+                    </a>
+                    <a href="seo.html">
+                        <li class="item-box float-item">
+                            <i class="bi bi-gem"></i>
+                            <p>S<span>E</span>O</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="item-box float-item">
+                            <i class="bi bi-display"></i>
+                            <p>Desktop <span> Application</span></p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="item-box float-item">
+                            <i class="bi bi-windows"></i>
+                            <p>UX / <span>UI Design</span> </p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="item-box float-item">
+                            <i class="bi bi-stack-overflow"></i>
+                            <p>Dev<span>Ops</span></p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="item-box float-item"><i class="bi bi-graph-up-arrow"></i>
+                            <p>Integration <span> Services</span></p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="item-box float-item">
+                            <i class="bi bi-speedometer"></i>
+                            <p><span> Server</span> Support</p>
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="item-box float-item">
+                            <i class="bi bi-spotify"></i>
+                            <p>Manual & <span> Automation</span> Testing</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+
+            <div class="services-btn">
+                <a href="#">
+                    <p class="services-btn1">See More</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="about" id="about">
+        <div class="about-left">
+            <img src="assets/images/about-left-image.png" alt="">
+        </div>
+        <div class="about-right">
+            <p class="about-heading"> Grow Your WebsiteWith Our <br> <span> SEO Tools </span> & <b> Projects</b><br> Management</p>
+            <p class="right-dec">Our team of experts working toward your digital success. So whatever your goal is—driving traffic, generating leads, maximizing sales, increasing brand awareness—</p>
+            <ul>
+                <li>
+                    <img src="assets/images/service-icon-01.png" alt="">
+                    <p class="about-letter">322</p>
+                    <p class="about-sub">SEO Projects</p>
+                    <p class="hide-obj">PPC (pay-per-click advertising): </p>
+                </li>
+                <li>
+                    <img src="assets/images/service-icon-02.png" alt="">
+                    <p class="about-letter">322</p>
+                    <p class="about-sub">SEO Projects</p>
+                    <p class="hide-obj">Get your website ranking with not only SEO but also an attractive, easy-to- </p>
+                </li>
+                <li>
+                    <img src="assets/images/service-icon-03.png" alt="">
+                    <p class="about-letter">322</p>
+                    <p class="about-sub">SEO Projects</p>
+                    <p class="hide-obj">We also provide services including landing page design, video marketing, reputation management, </p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="portfolio" id="portfolio">
+        <p class="portfolio-heading">Our Recent <span> Projects</span> & Case<br> Studies <b> for Clients</b></p>
+        <p class="portfolio-heading-shadow">OUR PORTFOLIO</p>
+        <div class="portfolio-left">
+            <img src="assets/images/portfolio-left-dec.png" alt="">
+        </div>
+        <div class="our-portfolio">
+
+            <div class="container">
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+
+                            <ul class="container-in float">
+
+                                <li class="item-box float-item">
+                                    <a href="consultancy.html">
+                                        <img src="/assets/images/video-big-thumb-01.png" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                                <li class="item-box float-item">
+                                    <a href="database.html">
+                                        <img src="/assets/images/video-big-thumb-02.png" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                                <li class="item-box float-item">
+                                    <a href="webdevelopment.html" class="our-service-hide">
+                                        <img src="/assets/images/video-big-thumb-03.png" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <ul class="container-in float">
+
+                                <li class="item-box float-item">
+                                    <a href="consultancy.html">
+                                        <img src="/assets/images/video-big-thumb-04.png" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                                <li class="item-box float-item">
+                                    <a href="database.html">
+                                        <img src="/assets/images/portfolio-01.jpg" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                                <li class="item-box float-item">
+                                    <a href="webdevelopment.html" class="our-service-hide">
+                                        <img src="/assets/images/portfolio-02.jpg" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <ul class="container-in float">
+                                <li class="item-box float-item">
+                                    <a href="consultancy.html">
+                                        <img src="/assets/images/portfolio-03.jpg" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                                <li class="item-box float-item">
+                                    <a href="database.html">
+                                        <img src="/assets/images/portfolio-04.jpg" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                                <li class="item-box float-item">
+                                    <a href="webdevelopment.html" class="our-service-hide">
+                                        <img src="/assets/images/portfolio-01.jpg" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="pricing" class="our-story">
+        <!--    <div class="laptop">
+            <img src="assets/images/xps.png" alt="">
+        </div>-->
+        <div class="left">
+            <h3>TouchinMind Expand its <br> focus and Commitment <br> in India</h3>
+            <p>Partners with Rogers to Support operational stability</p>
+            <p class="btn">Read More</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="portfolio" id="portfolio">
+        <p class="portfolio-heading">Our Recent <span> Projects</span> & Case<br> Studies <b> for Clients</b></p>
+        <p class="portfolio-heading-shadow">OUR CLIENTS</p>
+        <div class="portfolio-left">
+            <img src="assets/images/portfolio-left-dec.png" alt="">
+        </div>
+        <div class="our-portfolio">
+
+            <div class="container">
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+              
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+
+                            <ul class="container-in float">
+
+                                <li class="item-box float-item">
+                                    <a href="consultancy.html">
+                                        <img src="/assets/images/partner-1.png" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                                <li class="item-box float-item">
+                                    <a href="database.html">
+                                        <img src="/assets/images/partner-2.png" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                                <li class="item-box float-item">
+                                    <a href="webdevelopment.html" class="our-service-hide">
+                                        <img src="/assets/images/partner-3.png" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                                <li class="item-box float-item">
+                                    <a href="webdevelopment.html" class="our-service-hide">
+                                        <img src="/assets/images/partner-4.png" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="item">
+                            <ul class="container-in float">
+
+                                <li class="item-box float-item">
+                                    <a href="consultancy.html">
+                                        <img src="/assets/images/partner-5.png" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                                <li class="item-box float-item">
+                                    <a href="database.html">
+                                        <img src="/assets/images/partner-6.jpg" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                                <li class="item-box float-item">
+                                    <a href="webdevelopment.html" class="our-service-hide">
+                                        <img src="/assets/images/partner-7.png" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                                <li class="item-box float-item">
+                                    <a href="webdevelopment.html" class="our-service-hide">
+                                        <img src="/assets/images/partner-8.jpg" style="width: 100%;height: 100%;" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="class1" id="contact">
+        <div class="class2">
+            <h3>Contact Us</h3>
+            <p>Fill in the data below</p>
+            <ul>
+                <li><input type="text" placeholder="Enter Your Name"></li>
+                <li><input type="text" placeholder="Enter Your Mail Id"></li>
+            </ul>
+            <ul>
+                <li><input type="text" placeholder="Enter Mobile Number"></li>
+                <li><input type="text" placeholder="Enter Country"></li>
+            </ul>
+            <ul>
+                <li> <select class="form-select mt-3" required>
+                    <option selected disabled value="">Industry Type</option>
+                    <option value="jweb">IT Industry</option>
+                    <option value="sweb">Transport Industry</option>
+                    <option value="pmanager">Telecommunication Industry</option>
+                     <option value="pmanager">Construction Industry</option>
+                      <option value="pmanager">Pharmaceutical Industry</option> 
+                      <option value="pmanager">Education Industry</option> 
+                      <option value="pmanager"> Aerospace Industry</option> 
+                      <option value="pmanager">Agriculture Industry</option>
+                       <option value="pmanager">Food Industry</option>
+                       <option value="pmanager">Hospitatlity Industry</option>
+                       <option value="pmanager">News Media Industry</option>
+                       <option value="pmanager">Manufacturing Industry</option>
+                       <option value="pmanager">Electronic Industry</option>
+                   </select></li>
+                <li> <select class="form-select mt-3" required>
+                    <option selected disabled value="">Choose Services</option>
+                    <option value="jweb">SEO</option>
+                    <option value="sweb">Web Application</option>
+                    <option value="pmanager">Android Application</option>
+                    <option value="pmanager">Consultancy</option>
+                     <option value="pmanager">Cloud Computing</option>
+                     <option value="pmanager">Desktop Application</option>
+                     <option value="pmanager">UI/UX Design</option>
+                     <option value="pmanager">DevOps</option>
+                     <option value="pmanager">Integration Services</option>
+                     <option value="pmanager">Server Support</option>
+                     <option value="pmanager">Manuaal & Automation Testing</option>
+                     
+                   </select></li>
+            </ul>
+            <ul>
+                <li> <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="How can we help you " required></textarea></li>
+                <li> <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label">I confirm that all data are correct</label>
+                    <div class="form-button">
+                        <button id="submit" type="submit" class="btn btn-primary">Register</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="location" id="location">
+
+        <div class="location-left">
+            <img src="assets/images/contact-left-dec.png" alt="">
+        </div>
+
+        <div class="location-mid">
+            <p class="location-heading">Feel free <span> Connected</span> <b> With Us</b>
+            </p>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d458600.6378600212!2d79.16577883794014!3d26.104875987823487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399d7edf1179b633%3A0xb8b56ef0da1fbdb4!2sJalaun%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1634735298046!5m2!1sen!2sin"
+                width="150%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="location-right">
+            <img src="assets/images/contact-dec.png" alt="">
+        </div>
+    </div>
+
+    <div class="touch1">
+        <div class="touch2">
+            <ul>
+                <li><i class="bi bi-telephone-outbound"></i> 9098260397</li>
+                <li><i class="bi bi-envelope"></i> touchinmind@protonmail.com</li>
+            </ul>
+
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer1">
+        <div class="footer1-top">
+            <ul class="ul1 ul2">
+                <li class="li1 li2">
+                    <div class="logo"> <img src="assets/images/colored-logo8.PNG" style="width: 150px;" alt=""></div>
+                    <p class="footer1-mail">touchinmind@protonmail.com</p>
+                    <div class="social">
+                        <p class="facebook"><img src="assets/images/face2.png" alt=""></p>
+                        <p class="twitter"><img src="assets/images/twitter.png" alt=""></p>
+                        <p class="insta"><img src="assets/images/insta.jpg" alt=""></p>
+                        <p class="google"><img src="assets/images/google2.png" alt=""></p>
+                    </div>
+                </li>
+                <li class="li1 li2">
+                    <p class="footer1-heading">Services</p>
+                    <p>SEO Development</p>
+                    <p>Business Growth</p>
+                    <p>Social Media Management</p>
+                    <p>Website Optimization</p>
+                    <p>Web Hosting</p>
+                </li>
+                <li class="li1 li2">
+                    <p class="footer1-heading">Community</p>
+                    <p>Digital Marketing</p>
+                    <p>Business Ideas</p>
+                    <p>Website Checkup</p>
+                    <p>Page Speed Test</p>
+                    <p>SEO Development</p>
+                </li>
+
+                <li class="li1 li2">
+                    <p class="footer1-heading">Subscribe Newsletters</p>
+                    <p>Get our latest news and ideas</p>
+                    <p> to your inbox</p>
+
+                    <p><input type="text" placeholder="Your Email"><img src="assets/images/send-mail.png" style="height: 30px;width: 20px;margin-left: -45px;" alt=""></p>
+                </li>
+            </ul>
+        </div>
+        <div class="footer1-bottom">
+            <p class="horizon"></p>
+            <p>Copyright © 2021 TouchinMind.com, Ltd. All Rights Reserved. </p>
+            <p>Founder & Designed by <span style="font-size: 16px;"> Arvind Kumar</span></p>
+            <p>Distributed by <span> TouchinMind</span></p>
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
